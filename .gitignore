@@ -136,9 +136,11 @@ celerybeat.pid
 
 # Environments
 .env
+.workflow
 .envrc
 .venv
 env/
+workflow
 venv/
 ENV/
 env.bak/
