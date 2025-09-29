@@ -11,7 +11,7 @@ from langgraph.graph import StateGraph, END
 
 # Initialize the LLM
 # This model will be our "brain" for making decisions.
-llm = ChatOllama(model="llama3", temperature=0)
+llm = ChatOllama(model="deepseek-r1:1.5b", temperature=0)
 
 
 # --- 1. Define the State ---
@@ -35,7 +35,7 @@ def create_node_action(node_id: str):
         node_info = nodes_map[node_id]
         instruction = node_info['data']['instruction'].replace(
             "{{customer.name}}", state["customer_name"]
-        )
+        ) 
 
         print("-" * 20)
         print(f"Executing Node: {node_info['data']['name']}")
