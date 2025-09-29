@@ -52,6 +52,4 @@ Build a better intent classifier in the classify_intent function.
 
 Manage user sessions so you can handle multiple conversations at once, each with its own current_state.
 
-Connect it to a user interface, like a web page, Discord, Slack, or another messaging platform.
 
-Good luck with your project! 🚀
