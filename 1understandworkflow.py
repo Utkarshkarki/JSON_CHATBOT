@@ -55,7 +55,7 @@ def run_simple_chatbot(workflow_file: str, customer_name: str = "John Doe"):
             except ValueError:
                 print("Invalid input. Please enter a number.")
 
-        # 5. Move to the next node based on the choice
+        # 5. Move to the next node based on the cShoice
         current_node_id = edges[choice - 1]['destination_node_id']
 
     print("\n--- Chatbot Session Ended ---")

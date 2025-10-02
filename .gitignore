@@ -2,6 +2,9 @@
 __pycache__/
 *.py[codz]
 *$py.class
+#JSON files
+*.json
+kuralynx-workflow.json
 
 # C extensions
 *.so
