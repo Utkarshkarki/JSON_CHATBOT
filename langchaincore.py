@@ -4,12 +4,18 @@ from langchain_openai import ChatOpenAI
 from langchain_core.tools import tool
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.agents import AgentExecutor, create_tool_calling_agent
-
-# --- 0. Setup ---
+import os
+from langchain_openai import AzureChatOpenAI
 from dotenv import load_dotenv
-load_dotenv()  
+load_dotenv()
 
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=20)
+# --- 0. Setup LLM ---
+llm = AzureChatOpenAI(
+    azure_deployment="gpt-4o-mini",     # Azure deployment name (not the model string)
+    api_version="2024-05-01-preview",     # Azure OpenAI REST API version
+    temperature=1
+)
+
 
 # --- 1. Load Workflow Data ---
 with open("kuralynx-workflow.json", "r") as f:
