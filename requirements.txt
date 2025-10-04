@@ -4,4 +4,4 @@ langchain_community
 openai
 pydantic
 langchain-openai
-
+mem0ai
