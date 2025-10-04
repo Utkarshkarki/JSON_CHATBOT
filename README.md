@@ -53,3 +53,42 @@ Build a better intent classifier in the classify_intent function.
 Manage user sessions so you can handle multiple conversations at once, each with its own current_state.
 
 
+
+
+
+
+
+✅ mem0 client initialized successfully.
+
+🤖 Smart Chatbot is ready!
+---------------------------------------------------------
+You can chat normally with me.
+To save a fact, start your message with 'remember:'.
+For example: 'remember: My favorite city is Paris.'
+Type 'exit' to end the conversation.
+---------------------------------------------------------
+You: Hi, my name is Utkarsh.
+Bot: Hello Utkarsh! How can I assist you today?
+
+// --- Storing a long-term memory ---
+You: remember: My project deadline is next Friday.
+Bot: OK, I've stored that for you.
+
+// --- Normal conversation using short-term memory ---
+You: What is my name?
+Bot: Your name is Utkarsh.
+
+// --- Retrieving the long-term memory ---
+You: When is my deadline?
+Bot: Your project deadline is next Friday.
+
+// --- Storing another long-term memory ---
+You: remember: I am learning about AI memory systems.
+Bot: OK, I've stored that for you.
+
+// --- Asking a question that requires combining memories ---
+You: What am I learning about for my project?
+Bot: You are learning about AI memory systems for your project that is due next Friday.
+
+You: exit
+🤖 Goodbye!
