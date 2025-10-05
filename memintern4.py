@@ -29,7 +29,7 @@ class ChatbotSession:
         while True:
             user_input = input("You: ")
             if user_input.lower() == 'exit':
-                print("🤖 Ending this session. Goodbye!")
+                print("🤖 Ending this session. Goodbye")
                 break
             
             try:
