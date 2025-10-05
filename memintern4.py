@@ -13,7 +13,7 @@ class ChatbotSession:
             self.memory = Memory(user_id=self.user_id)
             print(f"\n✅ Chatbot session started for user {self.user_id}")
         except Exception as e:
-            print(f"❌ Error initializing mem0 client {e}")
+            print(f"Error initializing mem0 client {e}")
             self.memory = None
 
     def start_chat(self):
